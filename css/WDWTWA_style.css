@@ -133,6 +133,10 @@ header nav a.selected {
 }
 
 
+.data_intro{
+  padding:124px 64px;
+}
+
 
 .about h4 {
     padding: 64px 0 24px 64px;;
@@ -155,7 +159,7 @@ header nav a.selected {
 .venn_heading h4,
 .announcement h4,
 .conclusion h4{
-  padding: 10px;
+  /*padding: 10px;*/
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -253,6 +257,8 @@ section.citation .green_border h5{
   align-items: center;
   padding-top: 64px;
   padding-bottom: 64px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .green_border h6 {
@@ -261,9 +267,7 @@ section.citation .green_border h5{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
+  padding-top: 24px;
   /*padding-bottom: 68px;*/
 
 
@@ -276,22 +280,18 @@ section.citation .green_border h5{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-  /*padding-bottom: 68px;*/
+  text-align:center;
 
 }
 
 p.yellow_callout {
     padding: 18px;
-    margin-right: 18px;
-    margin-left: 18px;
+    /*margin-right: 18px;
+    margin-left: 18px;*/
     color: var(--gold);
     font-family: 'Rosario';
     font-size: 18px;
-    /*font-weight: 300;*/
-    max-width:600px;
+    /*max-width:600px;*/
     text-align: center;
     line-height: 1.2;
 
@@ -329,7 +329,6 @@ p.yellow_callout a:hover{
 .gender_bar_wrapper{
   position: relative;
   max-width: 1200px;
-  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -387,11 +386,11 @@ p.yellow_callout a:hover{
 
 
 
-.tooltip-range {
+/*.tooltip-range {
     margin-bottom: 0.2em;
     font-weight: 600;
 }
-
+*/
 .gender_bar_wrapper .xAxis .tick:nth-child(2n) text {
     visibility: hidden;
 }
@@ -466,7 +465,7 @@ p.yellow_callout a:hover{
 .level_table {
   padding-right: 16px;
   flex-basis: 50%;
-  min-width: 50%;
+  /*min-width: 50%;*/
   
 }
 
@@ -566,7 +565,7 @@ p.uppercase_heading {
     background: var(--dark_green);
     text-align: center;
     line-height: 1.4em;
-    font-size: 12px;
+    font-size: 14px;
 
     z-index: 10;
     transition: all 0.1s ease-out;
@@ -608,7 +607,7 @@ p.uppercase_heading {
     max-height: 500px;
     margin-right: auto;
     margin-left: auto;
-    /*width: 100%;*/
+
 
 }
 
@@ -618,7 +617,7 @@ p.uppercase_heading {
     position: relative;
     max-width:1200px;
     margin-right: auto;
-    margin-left: auto;s
+    margin-left: auto;
 
 }
 
@@ -929,7 +928,7 @@ text#text_label.label {
 
 .para.wide {
   flex-direction: column;
-  padding-top: 0;
+  /*padding-top: 0;*/
   
 }
 
@@ -987,17 +986,17 @@ text#text_label.label {
   }
 
   .para {
-    padding: 0 0;
+  padding-top: 12px;
+  padding-bottom:12px;
   }
 
-/*
+
 .intro, .announcement, .text, .conclusion, .citation, .venn , .exploring_header{
-    padding: 48px;
+     padding: 48px 48px;
 }
-*/
+
 .divider{
-      border-bottom: solid 1px var(--dark_green);
-      padding-top: 32px;
+      display: none;
 }
 
 
@@ -1042,6 +1041,11 @@ p.uppercase_heading {
     margin: 2px;
 }
 
+.venntooltip {
+      font-size: 12px;
+    }
+
+
 .waffle_wrapper{
   max-width:250px;
 }
@@ -1056,9 +1060,6 @@ p.yellow_callout {
 }
 
 
-.wikipedia_bar_gender_wrapper {
-padding-left: 100px;
-}
 
 .lollipop_holder p, .heatmap_holder p {
     padding-bottom: 48px;
@@ -1072,7 +1073,20 @@ padding-left: 100px;
 }
 
 
+
+
+
 @media(max-width: 414px) {
+
+.waffle_tooltip, .gender_tooltip,
+.wikipedia_bar_tooltip,
+.wikipedia_bar_gender_tooltip,
+.heatmap_tooltip, .lollipop_tooltip,
+.scatter_tooltip, .scatter2_tooltip
+  {
+  display: none;
+
+}
 
 
 header {
@@ -1089,7 +1103,6 @@ h1 {
 
 
 .para{
-  padding:0 0 0 0;
   flex-direction:column;
 }
 
@@ -1100,12 +1113,11 @@ h1 {
 
 .para .second  {
   padding-left: 0;
-  padding-top: 0;
 }
 
 
 .intro, .announcement, .text, .conclusion, .citation, .venn, .exploring_header {
-    padding: 24px;
+     padding: 24px 24px;
 
   }
   
@@ -1124,7 +1136,7 @@ border-bottom: solid 1px var(--dark_green);
     font-family: 'Rosario';
     font-size: 16px;
     font-weight: 300;
-    padding-top: 24px;
+    /*padding-top: 24px;*/
 }
 
 
@@ -1169,13 +1181,8 @@ border-bottom: solid 1px var(--dark_green);
 }
 
 p.uppercase_heading{
-  padding: 24px 12px;
+  padding-top: 24px;
 }
-
-.wikipedia_bar_gender_wrapper {
-    padding-left: 60px;
-}
-
 
 
 .lollipop_holder h6, .heatmap_holder h6 {
@@ -1184,9 +1191,6 @@ p.uppercase_heading{
     text-align: center;
 }
 
-.para.wide p {
-  padding-top: 0;
-}
 
 .green_border h6 {
   paddng-top: 24px;

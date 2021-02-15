@@ -165,7 +165,7 @@ var onMouseEnter = function(d) {
 		.text(subgroupValue)
    
  	tooltip
-      .style("left", (d3.mouse(this)[0]) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+      .style("left", (d3.mouse(this)[0]) + "px") 
       .style("top", (d3.mouse(this)[1]-90)+ "px")
 
         tooltip.style("opacity", 1)

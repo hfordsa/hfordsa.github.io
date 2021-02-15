@@ -1,0 +1,30 @@
+
+
+:root {
+
+	--background: #fcf8ec;
+	--text: #456268;
+	--highlight: #79a3b1;
+  
+}
+
+body{
+	background: var(--background);
+	margin: 68px;
+}
+
+h1 {
+	color: var(--text);
+	margin-bottom: 32px;
+}
+
+h3 a {
+	text-decoration: none;
+	color: var(--text);
+}
+
+h3 a:hover {
+	/*text-decoration: none;*/
+	color:var(--highlight);
+	border-bottom: solid 2px var(--light_green);
+}

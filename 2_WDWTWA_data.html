@@ -13,31 +13,63 @@
 	<body>
 		<!-- <script src="/superhi.js"></script> -->
 		<header>
+		
+
 		<h5>
+		
 		  <a href="2_WDWTWA_index.html">Producing distinction: Wikipedia and the Order of Australia</a>
-		 </h5>
+		
+		</h5>
 		  
 
-
-
-
 		  <nav>
+
 		  <a href="2_WDWTWA_data.html" class="selected">Data</a>
 		  <a href="2_WDWTWA_team.html">Team</a>
+
 		  </nav>
 		
 		</header>
 
-		<section>
+		
 
-		<!-- <div id="gender_bar"></div> -->
+		<section class="data_intro">
+
+			<div class="venn_heading">
+
+		<h4>Honours and Wikipedia Data sets</h4>
+
+	</div>
+		<div class="para">
+			<p class="first">
+Our analysis is based on an exploration of a data set that was created from merging two data sources together. The first is a data set that contains all available records of Order of Australia honours issued between the first awards in 1975 and the end of 2020. This data set contains n=41,816 records, with each record representing an issued Honour and is maintained by the Office of the PM and Cabinet (PMC). This data set contains variables including the honours ID, the level of the honour, the state or location it was issued from, the Order division, the Honours citation, and an honours date. An additional field of gender has been added. This is not a standard variable included in the publicly available data set. Some of the gender information was provided by the PMC and the rest was added using a combination of automated name matching and looking up additional information about the individual listed. Where a person is listed as “anonymous”, or if the person’s gender could not be verified, the record has been marked as “undefined”. Anonymous records on the honours list are associated with people who have received their honour anonymously, returned their award, or had their honour terminated. At the time of the data extraction there were n=133 anonymous honours listed. 
+</p>
+<p class="second">
+The second data set represents English Wikipedia articles about Australian Honours recipients. This was produced by querying Wikidata which hosts data about Wikipedia articles for all records that contained a reference to an Order of Australia. This resulted in an initial data set of 5,033 but 301 were removed because they had a record on Wikidata but not on Wikipedia.  A further 31 had no honours ID. After removing duplicates, we were left with 4,452 unique Wikipedia URLs. Using each of the Wikipedia URLs, the Wikipedia page ID was obtained by querying Wikipedia. The ID was then used to retrieve the page creation date by calling the first page edit and recording the date listed. 
+
+
+
+Both datasets were then merged using the Honours ID rather than the name as the merge key. Names could be represented differently across Wikidata and the Honours records, with the latter often using a person’s formal or official name, not the name that they are known by. For example, Albert Newton AM, not the familiar Bert Newton, is the name listed for Newton’s honour.  Once the data sets were merged together, we performed a number of transformations including creating factors for ordered variables such as Order level, and converting the date and time stamp of the Wikipedia page creation to Sydney Eastern Standard time. With this conversion we could perform correct date calculations with the date that an Honour was issued. 
+</p>
+</div>
+
+
+
+
+
+<div>
+<h6 class="venn_heading">Other Notes</h6>
+</div>
+
+<div class="para">
+<p class="first">
+There are n=368 recipients who have received multiple Order of Australia honours. These 368 individuals collectively received n=872 honours. This means  that the link is not always one-to-one but, at times, one-to-many. As we are referring to the number of pages created for individuals, and people cannot have more than one Wikipedia page, the data set was “flattened” so that each individual has one record. When an honouree has multiple awards we look at their most recent or highest honour level, and we base date calculations on the date of their first honour. The collapsed data set of all recipients is n=41,330, with all Order recipients who have a Wikipedia page totalling n=4,452.</p>
+<p class="second">
+The data set was downloaded from the Australian Honours Search Facility website on 28 January 2019. Subsequent honours events on 10 June 2019, 26 January 2020 and 8 June 2020 were processed in the same way, and appended to the 2019 data. The Wikidata extraction was performed on 9 November 2020.</p>
+
+</div>
 
 </section>
 
-<!-- 		<script src="js/d3.min.js"></script>
-	<script src="js/venn.min.js"></script>
-	<script type="text/javascript" src="js/venn_chart.js"></script>
-	<script type="text/javascript" src="js/gender_bar.js"></script>
- -->
 	</body>
 </html>

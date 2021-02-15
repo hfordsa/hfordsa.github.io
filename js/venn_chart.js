@@ -1,9 +1,9 @@
 
 
 var dataset = [ {sets: ['Wikipedia'], label:'Wikipedia', textLabel:'Wikipedia page only', size: 49117, fill: "#a2d0c1"}, 
-             {sets: ['Order of Australia'],  label:'Order of Australia', textLabel:'Order of Australia only',size: 36878, fill: "#f8dc81"},
+             {sets: ['Order of Australia'],  label:'Order of Australia', textLabel:'Order of Aus only',size: 36878, fill: "#f8dc81"},
              // {sets: ['Wikipedia','Order of Australia'],  textLabel:'both Wikipedia and Order of Aus', size: 4452, fill: "#DFD993"}]
-             {sets: ['Wikipedia','Order of Australia'],  textLabel:'both Wikipedia and Order of Aus', size: 4452}]
+             {sets: ['Wikipedia','Order of Australia'],  textLabel:'both', size: 4452}]
 
           
 
