@@ -998,6 +998,11 @@ text#text_label.label {
 
   }
 
+  h3 {
+    font-size: 18px;
+
+  }
+
   .hero{
     padding: 60px 160px;
   }
@@ -1117,9 +1122,12 @@ header {
 h1 {
   font-size:18px;
 }
+h3 {
+  font-size:18px;
+}
 
 .hero {
-    padding: 18px;
+    padding: 16px;
 }
 
 
