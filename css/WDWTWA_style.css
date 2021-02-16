@@ -12,7 +12,7 @@ body {
   background-color: var(--light_gold);
   color: var(--dark_green);
   font-family: 'Crimson Text';
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
@@ -31,6 +31,8 @@ h2 {
 h3 {
   font-family: 'Rosario';
   font-size: 40px;
+  font-style: italic;
+  padding-top: 24px;
 }
 
 h4 {
@@ -113,7 +115,8 @@ header nav a.selected {
 
 .intro-heading,
 .announcement-heading,
-.conclusion_heading
+.conclusion_heading,
+.team_heading
 
 {
   display: flex;
@@ -127,7 +130,8 @@ header nav a.selected {
 .announcement,
 .venn,
 .conclusion,
-.citation
+.citation,
+.team
 {
   padding: 64px 64px;
 }
@@ -158,8 +162,9 @@ header nav a.selected {
 .intro h4,
 .venn_heading h4,
 .announcement h4,
-.conclusion h4{
-  /*padding: 10px;*/
+.conclusion h4,
+.team h4
+ {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -195,14 +200,24 @@ section.citation .green_border h5{
   flex-basis: 0;
 }
 
+.para_wrap {
+  flex-basis: 50%;
 
-.para .first {
-  padding-right: 16px;
-  flex-basis: 100%;
 }
-.para .second {
+
+.para p.first {
+  padding-right: 16px;
+  flex-basis: 50%;
+  padding-top: 16px;
+  
+}
+
+
+
+.para p.second {
   padding-left: 16px;
-  flex-basis: 100%;
+  flex-basis: 50%;
+  padding-top: 16px;
 }
 
 
@@ -211,12 +226,16 @@ section.citation .green_border h5{
   color: var(--dark_green);
   font-weight: 600;
 }
+
+
 .para a:hover {
   text-decoration: none;
   border-bottom: solid 1px var(--dark_green);
 }
 
-
+.italicised {
+  font-style:italic;
+}
 
 .venn_container {
   max-width:600px;
@@ -912,7 +931,8 @@ text#text_label.label {
 }
 
 .text_heading h5,
-.conclusion_heading h5{
+.conclusion_heading h5, 
+.team_heading h5 {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -920,7 +940,8 @@ text#text_label.label {
 }
 
 
-.conclusion_heading h5{
+.conclusion_heading h5,
+.team_heading h5{
   font-style: italic;
   padding-top: 24px;
 }
@@ -991,7 +1012,7 @@ text#text_label.label {
   }
 
 
-.intro, .announcement, .text, .conclusion, .citation, .venn , .exploring_header{
+.intro, .announcement, .text, .conclusion, .citation, .venn , .exploring_header, .team{
      padding: 48px 48px;
 }
 
@@ -1116,12 +1137,12 @@ h1 {
 }
 
 
-.intro, .announcement, .text, .conclusion, .citation, .venn, .exploring_header {
+.intro, .announcement, .text, .conclusion, .citation, .venn, .exploring_header, .team {
      padding: 24px 24px;
 
   }
   
-.intro h4, .venn_heading h4, .announcement h4, .conclusion h4 {
+.intro h4, .venn_heading h4, .announcement h4, .conclusion h4, .team h4 {
     
 border-bottom: solid 1px var(--dark_green);
     
