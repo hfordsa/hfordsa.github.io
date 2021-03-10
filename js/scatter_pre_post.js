@@ -52,20 +52,20 @@ const xMin = d3.min(dataset, xAccessor)
 
 const wrapper = d3.select(".scatter_wrapper")
     .append("svg")
-    .attr("viewBox", "0 0 600 600")
+    .attr("viewBox", "0 0 700 700")
 
       .attr("class" ,"wrapper")
       
 
      
   let dimensions = {
-    width: 600,
-    height: 600,
+    width: 700,
+    height: 700,
     margin: {
         top: 10,
         right: 30,
-        bottom: 90,
-        left: 40,},
+        bottom: 40,
+        left: 50,},
     }
 
 
@@ -185,7 +185,7 @@ const labels = bounds.selectAll('text')
       .attr("class", "y-axis-label")
       .attr("x", -dimensions.boundedHeight / 2)
       .attr("y", -dimensions.margin.left + 15)
-      .text("Page created before Honours rceived")
+      .text("Page created before Honours received")
       .attr("color", "transparent")
 
 
