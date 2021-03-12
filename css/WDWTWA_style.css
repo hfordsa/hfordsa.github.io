@@ -972,11 +972,21 @@ text#text_label.label {
 
 
 
+footer img {
+    margin-left: 64px;
+    margin-bottom: 64px;
+}
 
+.footer-flex {
+  display: flex;
+  align-content: center;
+  
+}
 
-
-
-
+.footer-flex p {
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
 
 
